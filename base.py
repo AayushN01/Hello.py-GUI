@@ -16,6 +16,10 @@ def open():
     my_img = ImageTk.PhotoImage(Image.open("images/fb.png"))
     my_label = Label(top, image=my_img).pack()
 
+    btn2 = Button(top, text="Close window", command=top.destroy).pack()
+
+
+
 btn = Button(root, text="Open second window", command = open).pack()
 
 mainloop()
